@@ -1,0 +1,53 @@
+.box {
+    margin-left: 270px;
+    margin-top: 80px;
+}
+
+.companyname {
+    margin-left: 10px;
+    margin-right: 44px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.jobprofile {
+    margin-left: 10px;
+    margin-right: 79px;
+    margin-bottom: 10px;
+    float: left
+}
+
+.salary {
+    margin-left: 10px;
+    margin-right: 105px;
+    margin-bottom: 10px;
+    float: left
+}
+
+.location {
+    margin-left: 10px;
+    margin-right: 92px;
+    margin-bottom: 10px;
+    float: left
+}
+
+.noofemp {
+    margin-left: 10px;
+    margin-right: 6px;
+    margin-bottom: 10px;
+    float: left
+}
+
+.section {
+    margin-bottom: 10px;
+}
+
+.button {
+    margin-left: 120px;
+    width: 100px;
+}
+
+.msg {
+    margin-left: 50px;
+    margin-top: 10px;
+}

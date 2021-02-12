@@ -1,0 +1,30 @@
+<div class="box">
+    <div class="section">
+        <div class="companyname">Company Name</div>
+        <div><input type="text" [(ngModel)]="companyname" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="jobprofile">Job Profile</div>
+        <div><input type="text" [(ngModel)]="jobprofile" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="location">Location</div>
+        <div><input type="text" [(ngModel)]="location" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="salary">Salary</div>
+        <div><input type="text" [(ngModel)]="salary" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="noofemp">Number of Employees</div>
+        <div><input type="text" [(ngModel)]="noofemp" pInputText /></div>
+    </div>
+    <div>
+
+        <button class="btn btn-primary button" label="Post" icon="pi pi-check" iconPos="left" (click)="postJob()">
+        Post
+        </button>
+    </div>
+    <div class="msg">{{msg}}</div>
+    <!-- <button (click)="postJob()">Add Job</button> -->
+</div>

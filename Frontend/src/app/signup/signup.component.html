@@ -1,0 +1,43 @@
+<div class="box">
+    <div class="section">
+        <div class="firstname">First Name</div>
+        <div><input type="text" [(ngModel)]="firstname" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="secondname">Second Name</div>
+        <div><input type="text" [(ngModel)]="secondname" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="email">Email Address</div>
+        <div><input type="email" [(ngModel)]="email" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="phno">Phone no</div>
+        <div><input type="text" [(ngModel)]="phno" pInputText /></div>
+    </div>
+    <div class="section">
+        <div class="password">Password</div>
+        <div><input type="text" [(ngModel)]="mypassword" pInputText /></div>
+    </div>
+    <div>
+        <button class="btn btn-primary button" label="Sign up" icon="pi pi-check" iconPos="left" (click)="onclick()">
+        Sign Up
+        </button>
+    </div>
+    <div class="msg">{{msg}}</div>
+
+</div>
+
+
+<!-- <div class="p-field p-grid">
+    <label for="firstname3" class="p-col-fixed" style="width:100px">Firstname</label>
+    <div class="p-col">
+        <input id="firstname3" type="text" pInputText>
+    </div>
+</div>
+<div class="p-field p-grid">
+    <label for="lastname3" class="p-col-fixed" style="width:100px">Lastname</label>
+    <div class="p-col">
+        <input id="lastname3" type="text" pInputText>
+    </div>
+</div> -->

@@ -1,0 +1,43 @@
+<div class="block">
+
+    <div class="box">
+        <select [(ngModel)]="finalProfile" class="dropdown">
+        <option value="" disabled selected>Job Profile</option>
+        <option *ngFor="let string of profiles" [value]="string">
+        {{string}}
+        </option>
+        </select>
+
+
+        <select [(ngModel)]="finalCompany" class="dropdown">
+            <option value="" disabled selected>Company Name</option>
+        <option *ngFor="let string of companies" [value]="string">
+          {{string}}
+        </option>
+    </select>
+        <button class="btn btn-primary button" label="Get" icon="pi pi-check" iconPos="left" (click)="getJobs()">
+        Search </button>
+    </div>
+
+    <p-table [value]="jobs" *ngIf="getJob">
+        <ng-template pTemplate="header">
+            <tr>
+                <th class="header">Profile</th>
+                <th class="header">Company</th>
+                <th class="header">location</th>
+                <th class="header">Salary</th>
+                <th class="header">Number of Employees </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body">
+            <tr *ngFor="let job of jobs">
+                <td>{{job.jobProfile}}</td>
+                <td>{{job.companyName}}</td>
+                <td>{{job.location}}</td>
+                <td>{{job.salary}}</td>
+                <td>{{job.numberOfEmployees}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+</div>

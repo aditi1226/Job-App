@@ -1,0 +1,29 @@
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Job App</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a *ngIf="!checkLoggedIn()" label="About" icon="pi pi-check" iconPos="left" routerLink="/about" routerLinkActive="active">
+                    About</a></li>
+                <li><a *ngIf="checkLoggedIn()" label="Jobs" icon="pi pi-check" iconPos="left" routerLink="/getjob" routerLinkActive="active">
+                        Get Jobs</a></li>
+                <li><a *ngIf="checkLoggedIn()" label="Jobs" icon="pi pi-check" iconPos="left" routerLink="/jobs" routerLinkActive="active">
+                        Post Jobs</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a *ngIf="!checkLoggedIn()" icon="pi pi-check" iconPos="left" routerLink="/login" routerLinkActive="active">
+                    Log In</a></li>
+                <li><a *ngIf="!checkLoggedIn()" icon="pi pi-check" iconPos="left" routerLink="/signup" routerLinkActive="active">
+                    Sign up</a></li>
+                <li><a *ngIf="checkLoggedIn()" label="Log out" icon="pi pi-check" iconPos="left" routerLink="/logout" routerLinkActive="active">
+                    Log out</a></li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
